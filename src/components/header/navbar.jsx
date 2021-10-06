@@ -1,47 +1,78 @@
-import { useState } from "react";
-import { Box, useColorMode } from "@chakra-ui/react";
-
+import {
+  Box,
+  HStack,
+  Stack,
+  IconButton,
+  StackDivider,
+  Wrap,
+  Flex,
+} from "@chakra-ui/react";
+import {
+  faInstagram,
+  faTelegramPlane,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Links from "./links";
-import HamburgerMenu from "../UI/header/hamburgerMenu";
-import DarkModeToggle from "../UI/header/darkModeToggle";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <>
-      <Box
-        as="nav"
-        display="flex"
-        flexDir={{ base: "row-reverse", lg: "row" }}
-        alignItems="center"
-      >
-        <HamburgerMenu toggled={isOpen} toggle={setIsOpen} />
-        <Box
-          as="ul"
-          fontWeight="600"
-          bg={{ base: "telegram.700", lg: "transparent" }}
-          display={{
-            base: isOpen ? "block" : "none",
-            lg: "flex",
-          }}
-          position={{ base: "absolute", lg: "static" }}
-          top="5rem"
-          left="5%"
-          right="5%"
-          rounded={{ base: "lg", lg: "none" }}
-          py={{ base: "2", lg: "0" }}
-          px={{ base: "4", lg: "0" }}
-          alignItems={{ lg: "center" }}
-          boxShadow={{ base: "xl", lg: "none" }}
-          zIndex="2"
-        >
-          <Links onClick={() => setIsOpen(false)} />
-        </Box>
+      <Box pos="sticky" top="0" fontSize="18px" zIndex="10">
+        <Box id="header" px={[4, 6, 10, 14, 20]} maxW="1440px" mx="auto">
+          <HStack
+            py="5"
+            px="5"
+            shadow="lg"
+            as="nav"
+            bg="white"
+            justifyContent="space-between"
+          >
+            <Box w="70%">
+              <Wrap>
+                <Links />
+              </Wrap>
+            </Box>
+            <Flex justifyContent="flex-end" w="25%" pr="3">
+              <Stack direction="row" divider={<StackDivider />}>
+                <IconButton
+                  as="a"
+                  target="_blank"
+                  href="http://instagram.com"
+                  aria-label="Instagram"
+                  fontSize="30px"
+                  variant="flushed"
+                  color="#f46f30"
+                >
+                  <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+                </IconButton>
 
-        <DarkModeToggle onClick={toggleColorMode} colorMode={colorMode} />
+                <IconButton
+                  as="a"
+                  target="_blank"
+                  href="http://instagram.com"
+                  aria-label="Telegram"
+                  fontSize="30px"
+                  color=" #0088cc"
+                  variant="flushed"
+                >
+                  <FontAwesomeIcon icon={faTelegramPlane}></FontAwesomeIcon>
+                </IconButton>
+                <IconButton
+                  as="a"
+                  target="_blank"
+                  href="http://instagram.com"
+                  aria-label="Whatsapp"
+                  fontSize="30px"
+                  color="#25d366"
+                  variant="flushed"
+                >
+                  <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
+                </IconButton>
+              </Stack>
+            </Flex>
+          </HStack>
+        </Box>
       </Box>
     </>
   );

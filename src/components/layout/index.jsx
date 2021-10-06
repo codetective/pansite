@@ -11,7 +11,9 @@ const Layout = ({ children }) => (
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
     </NextHead>
     <Header />
-    <Box as="main">{children}</Box>
+    <Box as="main" maxW="1440px" mx="auto" bg="gray.50">
+      {children}
+    </Box>
   </>
 );
 

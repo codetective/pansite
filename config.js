@@ -1,10 +1,14 @@
 export default {
-  title: "Next.js Chakra UI Template",
-  description: "A starter Template for Next.js with Chakra UI.",
+  title: "PANS site for uniuyo Pharmacy students",
+  description: "Website for PANS Uniuyo built with NEXTjs5",
 };
 
 export const links = [
   { title: "Home", path: "/" },
-  { title: "About", path: "/About" },
+  { title: "About", path: "/about" },
+  { title: "Blog", path: "/blog" },
+  { title: "Scholarships", path: "/scholarship" },
+  { title: "Media", path: "/media" },
+  { title: "Executives", path: "/exco" },
   { title: "Contact", path: "/contact" },
 ];

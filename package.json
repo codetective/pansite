@@ -13,10 +13,18 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@fontsource/poppins": "^4.5.0",
+    "@fontsource/source-sans-pro": "^4.5.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "framer-motion": "^4.1.17",
     "hamburger-react": "^2.4.1",
     "next": "11.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-countup": "^6.0.0",
+    "react-dom": "17.0.2",
+    "react-reveal": "^1.2.2",
+    "react-visibility-sensor": "^5.1.1"
   }
 }
