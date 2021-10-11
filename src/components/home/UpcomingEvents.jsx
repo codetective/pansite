@@ -13,8 +13,8 @@ import TimelineContainer from "../UI/timeline/TimeLineContainer";
 
 export default function UpcomingEvents() {
   return (
-    <>
-      <Flex p={50} w="full" alignItems="center" justifyContent="center">
+    <Box py={50}>
+      <Flex w="full" alignItems="center" justifyContent="center">
         <Flex justify="center" w="full">
           <Box
             w={{ base: "full", md: "75%", lg: "50%" }}
@@ -48,6 +48,6 @@ export default function UpcomingEvents() {
         </Flex>
       </Flex>
       <TimelineContainer />
-    </>
+    </Box>
   );
 }
