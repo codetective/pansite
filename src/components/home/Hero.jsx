@@ -33,7 +33,7 @@ export default function SplitScreen() {
         bgRepeat="no-repeat"
         bgSize="cover"
         bgImg={showSm === false && `url('${images[img]}')`}
-        bgColor={showSm === false && "blackAlpha.800"}
+        bgColor={showSm === false && "blackAlpha.600"}
         bgBlendMode="overlay"
         minH={{
           base: "100vh",

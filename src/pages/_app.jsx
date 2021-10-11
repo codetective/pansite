@@ -17,7 +17,7 @@ import "@fontsource/source-sans-pro/700.css";
 const theme = extendTheme({
   fonts: {
     heading: "Poppins, -apple-system",
-    body: "'Source Sans Pro', -apple-system",
+    body: "Source Sans Pro, -apple-system",
   },
 });
 

@@ -6,6 +6,7 @@ import Hero from "../components/home/Hero";
 import CountUpStats from "../components/home/CountUpStats";
 import WelcomeCard from "../components/home/WelcomeCard";
 import ObjectiveCards from "../components/home/ObjectiveCards";
+import UpcomingEvents from "../components/home/UpcomingEvents";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <CountUpStats />
       <WelcomeCard />
       <ObjectiveCards />
+      <UpcomingEvents />
     </>
   );
 };
