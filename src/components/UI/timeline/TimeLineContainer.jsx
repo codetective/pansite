@@ -2,7 +2,6 @@ import timelinedata from "./timelinedata";
 import TimelineItem from "./TimeLineItem";
 import { Box } from "@chakra-ui/react";
 import Section from "../Section";
-console.log(timelinedata);
 
 const TimelineContainer = () => {
   return (

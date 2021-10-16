@@ -2,6 +2,7 @@ import { Box } from "@chakra-ui/react";
 import NextHead from "next/head";
 
 import Header from "../header";
+import Footer from "./footer/Footer";
 
 const Layout = ({ children }) => (
   <>
@@ -11,8 +12,11 @@ const Layout = ({ children }) => (
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
     </NextHead>
     <Header />
-    <Box as="main" maxW="1440px" mx="auto" bg="gray.50">
-      {children}
+    <Box as="main" maxW="1440px" mx="auto" pos="relative">
+      <Box bg="gray.50" pos="relative" zIndex="2">
+        {children}
+      </Box>
+      <Footer />
     </Box>
   </>
 );

@@ -1,19 +1,10 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Stack,
-  HStack,
-  Flex,
-  Text,
-  Circle,
-} from "@chakra-ui/react";
-import Section from "../UI/Section";
+import { chakra, Box, Flex } from "@chakra-ui/react";
 import TimelineContainer from "../UI/timeline/TimeLineContainer";
 
 export default function UpcomingEvents() {
   return (
-    <Box py={50}>
+    <Box onCanPlay={50}>
       <Flex w="full" alignItems="center" justifyContent="center">
         <Flex justify="center" w="full">
           <Box

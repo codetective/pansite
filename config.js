@@ -5,9 +5,10 @@ export default {
 
 export const links = [
   { title: "Home", path: "/" },
-  { title: "About", path: "/about" },
+  { title: "E-Resources", path: "/library" },
   { title: "Blog", path: "/blog" },
   { title: "Scholarships", path: "/scholarship" },
+  // { title: "About", path: "/about" },
   { title: "Media", path: "/media" },
   { title: "Executives", path: "/exco" },
   { title: "Contact", path: "/contact" },
