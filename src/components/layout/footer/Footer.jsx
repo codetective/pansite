@@ -59,9 +59,9 @@ export default function Footer() {
       >
         <Logo />
         <Stack direction={"row"} divider={<StackDivider />}>
-          {links.slice(0, 4).map((link, i) => {
+          {links.slice(0, 3).map((link, i) => {
             return (
-              <NextLink href={link.path}>
+              <NextLink key={i} href={link.path}>
                 <chakra.a
                   fontFamily="Poppins"
                   transition="all .3s ease"
@@ -91,7 +91,9 @@ export default function Footer() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2021 PANS Uniuyo. All rights reserved</Text>
+          <Text textAlign="center">
+            © 2021 PANS Uniuyo. All rights reserved
+          </Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
               <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
