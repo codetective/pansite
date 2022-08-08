@@ -757,10 +757,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.0.tgz#a419697b85864afbf8363f5c247b1e9d1f117564"
   integrity sha512-RqgMIQqKHWNH3IUj+a0MAhlb4g5fftsXRTJ2bauefBmfM8Ja5q+qQZjKwyB/iCc+paJD320zFnLJ8G+y1ZyemQ==
 
-"@fontsource/source-sans-pro@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-pro/-/source-sans-pro-4.5.0.tgz#19726a3c609f9450bfc53811b8497d4684ff2111"
-  integrity sha512-+ze+nO9dVN5pAVg9CdQmVgR6f8kDpq/elHMGcyx3qsW4+TN4mI7EuMdNzKP3E1xeZwTHSmHY5bezpfFHX7bQsg==
+"@fontsource/source-sans-pro@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-pro/-/source-sans-pro-4.5.11.tgz#06b3f08ef1a5250d78c8198e5a0482b5d87a4d52"
+  integrity sha512-f7iw44q1EjBv3MNcHCGAgrW/QVyweaEouFsJzykPhTOGnZFSwFJRISToXornOmuAy7xUUGiVdqOLiykgZoYB8A==
 
 "@fortawesome/fontawesome-common-types@^0.2.36":
   version "0.2.36"
